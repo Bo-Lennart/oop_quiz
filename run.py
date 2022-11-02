@@ -1,3 +1,11 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+from question_model import Question
+from data import question_data
+
+question_bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question ["answer"]
+    new_question = Question(question_text,question_answer)
+    question_bank.append(new_question)
+
+print(question_bank)
