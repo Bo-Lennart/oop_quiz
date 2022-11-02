@@ -5,5 +5,5 @@ class Question:
         self.answer = q_answer
 
 
-new_q = Question("asdaskjnf", "False")
+new_q = Question("The Quiz Game", "False")
 print(new_q.text)
